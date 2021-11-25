@@ -21,7 +21,7 @@ def whot_you_done(age):
     elif age < 23:
         return "Вы учитесь в институте"
     else:
-        return "Вам ходите на работу..."
+        return "Вы ходите на работу"
 
 def main():
     """
