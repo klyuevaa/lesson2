@@ -13,13 +13,24 @@
 * Вывести содержимое переменной на экран
 
 """
+def whot_you_done(age):
+    if age < 7:
+        return "Вы в детском саде"
+    elif age < 18:
+        return "Вы учитесь в школе"
+    elif age < 23:
+        return "Вы учитесь в институте"
+    else:
+        return "Вам ходите на работу..."
 
 def main():
     """
     Эта функция вызывается автоматически при запуске скрипта в консоли
     В ней надо заменить pass на ваш код
     """
-    pass
+    age = int(input("Сколько Вам лет: "))
+    result = whot_you_done(age)
+    print(result)
 
 if __name__ == "__main__":
     main()
