@@ -15,13 +15,22 @@
     
 """
 
-questions_and_answers = {}
+questions_and_answers = {"кто тут?":"программа на python",
+'что ты умеешь?':"отвечать на вопросы",
+"какие?":"я знаю только 6 вопросов",
+"тебе?":"мне",
+"когда?":"Иногда",
+"сегодня?":"нет, лучше завтра"}
 
 def ask_user(answers_dict):
-    """
-    Замените pass на ваш код
-    """
-    pass
-    
+  while True:
+    ques = str(input('ваш вопрос:'))
+    if ques in questions_and_answers:
+      print(questions_and_answers[ques])
+   # elif ques == 'q' or 'й':
+    #  break
+    else: print ('Ooops....No answer')
+   #q print("\n надоело? Набери 'q'")
+
 if __name__ == "__main__":
-    ask_user(questions_and_answers)
+  ask_user(questions_and_answers)
