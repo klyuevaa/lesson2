@@ -38,11 +38,12 @@ def main():
   for name_of_prod in stock:
     product = name_of_prod['product']
     sold = summ_sold(name_of_prod['items_sold'])
-    print(product,sold)
+    aver = avg_sold(name_of_prod['items_sold'])
+    print(product,'--всего', sold, 'среднее', aver)
     sold_all += sold
     count += len(name_of_prod['items_sold'])
-  print(sold_all)
-  print(count)
+  print('общие продажи', sold_all)
+  print('средние продажи', sold_all / count)
 
 if __name__ == "__main__":
     main()
